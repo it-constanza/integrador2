@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto Integrador</title>
+</head>
+
+<body>
+
+  <header class="main-header">
+    <input type="checkbox" id="menu">
+
+    <nav class="nav-bar"> <!-- nav-bar -->
+      <ul class="nav-bar__nav-list">
+        <li class="nav-bar__nav-item">
+          <a href="/index.html" class="nav-bar__nav-link">Inicio</a>
+        </li>
+        <li class="nav-bar__nav-item">
+          <a href="alta.html" class="nav-bar__nav-link">Alta</a>
+        </li>
+        <li class="nav-bar__nav-item">
+          <a href="contacto.html" class="nav-bar__nav-link">Contacto</a>
+        </li>
+        <li class="nav-bar__nav-item">
+          <a href="nosotros.html" class="nav-bar__nav-link">Nosotros</a>
+        </li>
+      </ul>
+    </nav> <!-- nav-bar -->
+
+    <div class="search-bar"> <!-- search-bar -->
+      <div class="search-bar__logo-container"> <img src="/img/logo.png" alt="logo"> </div>
+      <div class="menu-toggle">
+        <label for="menu" class="menu-toggle__label">
+          <span class="menu-toggle__top-bread"></span>
+          <span class="menu-toggle__meat"></span>
+          <span class="menu-toggle__bottom-bread"></span>
+        </label>
+      </div>
+    </div> <!-- search-bar -->
+  </header>
+
+  <main>
+
+    <h1> Contactate con nosotros</h1>
+    <h3> Dejanos tus dudas y tu metodo preferido de contacto y un especialista se pondra en contacto con vos.</h3>
+
+    <div class="form">
+
+      <form action="#" method="post">
+
+        <div class="form__fieldset">
+          <fieldset>
+            <legend class="form__legend"> Datos Personales </legend>
+
+            <div class="form__inputlabel"> <label for="nombre" class="form__label">Nombre:*</label>
+              <input type="text" id="nombre" name="nombre" class="form__input" required>
+            </div>
+
+            <div class="form__inputlabel">
+              <label for="apellido" class="form__label">Apellido:*</label>
+              <input type="text" id="apellido" name="apellido" class="form__input" required>
+            </div>
+
+            <div class="form__inputlabel">
+
+              <label for="telefono" class="form__label"> Teléfono: </label>
+              <input type="tel" id="telefono" name="telefono" placeholder="Codigo de area y numero" class="form__input">
+
+            </div>
+
+            <div class="form__inputlabel">
+              <label for="email" class="form__label"> Direccion de correo electronico:* </label>
+              <input type="email" name="email" id="email" placeholder="Ej: mail@gmail.com" class="form__input">
+
+              <div> <input type="checkbox" id="Novedades" name="Novedades" value="Novedades" checked class="form__cbox">
+                <label for="Novedades">Deseo recibir novedades</label>
+              </div>
+
+            </div>
+
+        </div> <!-- " fin form__fieldset" -->
+
+
+
+        </fieldset> <!-- FIN DATOS PERSONALES -->
+
+
+
+        <div class="form__fieldset">
+          <fieldset>
+            <legend class="form__legend"> Datos de Contacto </legend>
+
+
+            <div class="form__inputlabel">
+              <label for="ctc" class="form__label">¿Como preferis que te contactemos?:*</label>
+              <select name="ctc" id="ctc" class="form__input">
+                <option hidden selected> -Seleccionar- </option>
+                <option value="whatsApp">WhatsApp</option>
+                <option value="telefono">Telefono</option>
+                <option value="mail">Email</option>
+                <option value="todas">Todas las anteriores</option>
+              </select>
+            </div>
+
+            <div class="form__inputlabel">
+              <label for="contanos" class="form__label">Contanos en que podemos ayudarte. <span> Cuanto mas informacion
+                  nos
+                  des, mas interesante sera la informacion que te prepare nuestro especialista </span> </label>
+              <textarea name="contanos" id="contanos" cols="45" rows="5" class="form__input"></textarea>
+
+            </div>
+
+
+          </fieldset> <!-- FIN DATOS DE CONTACTO -->
+        </div>
+
+
+
+
+
+
+
+
+        <div class="form__buttons">
+
+          <button type="submit" class="form__button">Enviar mensaje</button>
+          <button type="reset" class="form__button">Restablecer</button>
+
+        </div>
+
+      </form>
+    </div> <!-- FIN DIV FORM  -->
+
+
+  </main> <!-- main -->
+
+  <footer class="main-footer">
+    <nav class="nav-foot"> <!-- nav-foot -->
+      <ul class="nav-foot__nav-list">
+        <li class="nav-foot__nav-item">
+          <a href="/index.html" class="nav-foot__nav-link">Inicio</a>
+        </li>
+        <li class="nav-foot__nav-item">
+          <a href="alta.html" class="nav-foot__nav-link">Alta</a>
+        </li>
+        <li class="nav-foot__nav-item">
+          <a href="contacto.html" class="nav-foot__nav-link">Contacto</a>
+        </li>
+        <li class="nav-foot__nav-item">
+          <a href="nosotros.html" class="nav-foot__nav-link">Nosotros</a>
+        </li>
+      </ul>
+    </nav> <!-- nav-foot -->
+
+    <p class="main-footer__p"> Todos los derechos reservados para Cony INC. </p>
+
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
